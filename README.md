@@ -2,6 +2,8 @@
 
 An extremely tiny pubsub module.
 
+[![Build Status](https://travis-ci.org/jmwohl/micropubsub.svg)](https://travis-ci.org/jmwohl/micropubsub)
+
 ## Usage
 
 ### Basic Example

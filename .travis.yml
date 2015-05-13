@@ -1,0 +1,12 @@
+language: python
+python:
+  - "3.3"
+  - "3.4"
+
+# database and flake8
+before_script:
+  - pip install -r requirements-testing.txt
+
+# command to run tests
+script:
+  - nosetests
