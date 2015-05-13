@@ -1,5 +1,5 @@
 """
-An extremely tiny pub/sub module.
+An extremely tiny pubsub module.
 """
 
 # A dictionary containing lists of callbacks subscribed to a given event.
