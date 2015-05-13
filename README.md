@@ -1,6 +1,6 @@
 # MicroPubSub
 
-An extremely tiny pub/sub module.
+An extremely tiny pubsub module.
 
 ## Usage
 
@@ -111,6 +111,16 @@ pubsub.unsubscribe('login', handleLoginEvent)
 pubsub.publish('login', username='richard')
 # we get nothing, since there are no longer any handlers subscribed to the event
 
+```
 
 
+## Tests
+If you want to run the nose tests, first install the testing deps:
+```
+$ pip install -r requirements-testing.txt
+```
+
+Then run 'em:
+```
+$ nosetests --with-coverage
 ```
