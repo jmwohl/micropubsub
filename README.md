@@ -77,7 +77,7 @@ def handleLoginEvent(username=None):
 
 # another callback elsewhere in the application
 def anotherLoginEventHandler(username=None):
-	print(username + ' logged in.')
+	print(username + ' is a real winner.')
 
 # subscribe the callbacks to the login event
 pubsub.subscribe('login', handleLoginEvent)
@@ -86,7 +86,7 @@ pubsub.subscribe('login', anotherLoginEventHandler)
 # when the login event is published, both callback will be called with the supplied **kwargs
 pubsub.publish('login', username='richard')
 
-# prints 'richard logged in.'
+# prints 'richard logged in.' and 'richard is a real winner.'
 
 ```
 
