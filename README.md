@@ -3,6 +3,7 @@
 An extremely tiny pubsub module.
 
 [![Build Status](https://travis-ci.org/jmwohl/micropubsub.svg)](https://travis-ci.org/jmwohl/micropubsub)
+[![Coverage Status](https://coveralls.io/repos/jmwohl/micropubsub/badge.svg)](https://coveralls.io/r/jmwohl/micropubsub)
 
 ## Usage
 
