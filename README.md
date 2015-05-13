@@ -1,6 +1,6 @@
 # MicroPubSub
 
-An extremely tiny pubsub module.
+An extremely tiny pubsub module, inspired by [jquery tiny pubsub](https://github.com/cowboy/jquery-tiny-pubsub).
 
 [![Build Status](https://travis-ci.org/jmwohl/micropubsub.svg)](https://travis-ci.org/jmwohl/micropubsub)
 [![Coverage Status](https://coveralls.io/repos/jmwohl/micropubsub/badge.svg?branch=master)](https://coveralls.io/r/jmwohl/micropubsub?branch=master)
