@@ -27,5 +27,4 @@ def publish(event, *args, **kwargs):
 	"""
 	if event in _subscribers:
 		for subscriber in _subscribers[event]:
-			print("publishing " + event + " to subscriber")
 			subscriber(*args, **kwargs)

@@ -10,6 +10,6 @@ before_script:
 
 # command to run tests
 script:
-  - nosetests --with-coverage
+  - nosetests --with-coverage --cover-package=micropubsub.py
 
 after_success: coveralls

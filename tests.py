@@ -58,7 +58,7 @@ def test_multiple_subscriptions():
 
 
 def test_multiple_subscriptions_and_unsubscribe():
-	should_be_called = 0
+	should_be_called = 2
 	called = 0
 
 	# define a callback, aka a handler
@@ -69,6 +69,9 @@ def test_multiple_subscriptions_and_unsubscribe():
 	# subscribe the callback to the event TWICE
 	ps.subscribe('some:event', handleEvent)
 	ps.subscribe('some:event', handleEvent)
+
+	# publishing should increment twice
+	ps.publish('some:event')
 
 	# should remove all subscriptions to some:event for handleEvent
 	ps.unsubscribe('some:event', handleEvent)
@@ -113,3 +116,5 @@ def test_keyword_args():
 	ps.publish('name', name='Jonny')
 
 	assert expected_name == actual_name
+
+test_multiple_subscriptions_and_unsubscribe()
